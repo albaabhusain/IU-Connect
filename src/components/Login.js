@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import{connect} from "react-redux";
+
+import { signInAPI } from "../actions";
+
 const Login = (props) => {
     return(
         <Container>
@@ -21,9 +25,9 @@ const Login = (props) => {
                     </Hero>
                     <MainForm>
                     <Form>
-                        <LogForm>
+                        <LogForm onClick={()=>props.signIn}>
                             <img src="images/LoginPage_illustration.png"/>
-                            Sign in with IUL account
+                            Sign in with Gmail account
                         </LogForm>
                     </Form>
                     <Form>
@@ -188,6 +192,14 @@ const MainForm=styled.div`
     flex-direction: column;
 `;
 
+const mapStateToProps=(state)=>{
+    return{};
+}
+const mapDispatchToProps=(dispatch)=>({
+    signIn:()=>dispatch(signInAPI()),
+
+});
 
 
-export default Login;
+export default connect(mapStateToProps,mapDispatchToProps)(Login);
+
