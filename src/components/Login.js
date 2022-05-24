@@ -20,7 +20,7 @@ const Login = (props) => {
 
             <Section>
                 <Hero>
-                    <h1>Welocme to IU Connect , Get Super advice from Super Seniors...</h1>
+                    <h1>Welcome to IU Connect, Get Super advice from Super Seniors...</h1>
                     <img src="/images/Landing_illustration.png" />
                     </Hero>
                     <MainForm>
