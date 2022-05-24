@@ -31,10 +31,13 @@ const Login = (props) => {
                         </LogForm>
                     </Form>
                     <Form>
-                        <LogForm>
+                        <a href="/home">
+                             <LogForm>
                             <img src="images/LoginPage_illustration.png"/>
                             Sign in with IUL account
                         </LogForm>
+                        </a>
+                       
                     </Form>
 
                     </MainForm>

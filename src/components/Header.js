@@ -62,7 +62,7 @@ const Header = (props) => {
               </a>
 
               <SignOut>
-                <a>Sign Out</a>
+                <a href="/">Sign Out</a>
               </SignOut>
             </User>
 
